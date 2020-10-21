@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: black;
+}
+
+.logo {
+    /* width: 50%; */
+    display: inline-block;
+    padding: 20px;
+    padding-top: 15px;
+  }
+  
+  @media only screen and (min-width: 650px) {
+    .logo {
+      float: left;
+      width: 90px;
+      height: 90px;
+    }
+    .logo .logopic {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  @media only screen and (max-width: 649px) {
+    .logo {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    .logo .logopic {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 80px;
+      height: 80px;
+      
+    }
+  }
+  
+  /* ______________________________butlist CSS_______________________________ */
+  .butlist {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+  @media only screen and (min-width: 650px) {
+    .butlist {
+      width: 85%;
+    }
+    .butlist li {
+      float: right;
+    }
+  }
+  @media only screen and (max-width: 649px) {
+    .butlist {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    .butlist .butres {
+      width: 341px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    .butlist li {
+      border: 2px solid white;
+      font-weight: bold;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .butlist .butres {
+      width: 285px;
+    }
+    .butlist li {
+      font-size: 20px;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+  
+  .butlist li {
+    margin: 15px;
+    padding: 15px;
+    font-size: 25px;
+    display: inline-block;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  .butlist li:hover {
+    background-color: white;
+    transition: 0.5s;
+  }
+  .butlist li:hover a {
+    color: black;
+  }
+  .butlist li a {
+    text-decoration: none;
+    color: white;
+  }
+
+#generate_chart {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+  width: 200px;
+  border: 2px solid black;
+  background: white;
+  color: black;
+  padding: 10px;
+  font-size: 15px;
+}
+#generate_chart:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+#chartContainer,
+#barchartContainer {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  display: none;
+}
+#chartContainer {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.charttext {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-top: 50px;
+  font-family: "Oswald", sans-serif;
+}

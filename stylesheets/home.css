@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  background-image: url("../img/bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.logo {
+  /* width: 50%; */
+  display: inline-block;
+  padding: 20px;
+  padding-top: 15px;
+}
+
+@media only screen and (min-width: 650px) {
+  .logo {
+    float: left;
+    width: 90px;
+    height: 90px;
+  }
+  .logo .logopic {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 649px) {
+  .logo {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .logo .logopic {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80px;
+    height: 80px;
+    
+  }
+}
+
+/* ______________________________butlist CSS_______________________________ */
+.butlist {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+@media only screen and (min-width: 650px) {
+  .butlist {
+    width: 85%;
+  }
+  .butlist li {
+    float: right;
+  }
+}
+@media only screen and (max-width: 649px) {
+  .butlist {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .butlist .butres {
+    width: 341px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .butlist li {
+    border: 2px solid white;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .butlist .butres {
+    width: 285px;
+  }
+  .butlist li {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.butlist li {
+  margin: 15px;
+  padding: 15px;
+  font-size: 25px;
+  display: inline-block;
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.butlist li:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+.butlist li:hover a {
+  color: black;
+}
+.butlist li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* _______________info CSS_________________ */
+.info {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 60%;
+}
+.info .infohead {
+  font-size: 30px;
+  font-weight: bold;
+}
+.info .infotext {
+  font-size: 20px;
+}
+
+/* ____________________PageButs CSS___________________ */
+.pagebuts {
+  margin-top: 150px;
+}
+.pagebuts .pagebut {
+  width: 33%;
+  display: inline-block;
+}
+@media only screen and (max-width: 1000px) {
+  .pagebuts .pagebut {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+.pagebuts .pagebut .pagebuttext {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  border: 2px solid white;
+}
+@media only screen and (max-width: 1000px) {
+  .pagebuts .pagebut .pagebuttext {
+    width: 30%;
+  }
+}
+.pagebuts .pagebut .pagebuttext:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+.pagebuts .pagebut .pagebuttext:hover a {
+  color: black;
+}
+.pagebuts .pagebut .pagebuttext a {
+  text-decoration: none;
+  color: white;
+}

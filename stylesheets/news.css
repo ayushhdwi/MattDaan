@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: black;
+}
+
+.logo {
+  /* width: 50%; */
+  display: inline-block;
+  padding: 20px;
+  padding-top: 15px;
+}
+
+@media only screen and (min-width: 650px) {
+  .logo {
+    float: left;
+    width: 90px;
+    height: 90px;
+  }
+  .logo .logopic {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 649px) {
+  .logo {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .logo .logopic {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80px;
+    height: 80px;
+    
+  }
+}
+
+/* ______________________________butlist CSS_______________________________ */
+.butlist {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+@media only screen and (min-width: 650px) {
+  .butlist {
+    width: 85%;
+  }
+  .butlist li {
+    float: right;
+  }
+}
+@media only screen and (max-width: 649px) {
+  .butlist {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .butlist .butres {
+    width: 341px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .butlist li {
+    border: 2px solid white;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .butlist .butres {
+    width: 285px;
+  }
+  .butlist li {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.butlist li {
+  margin: 15px;
+  padding: 15px;
+  font-size: 25px;
+  display: inline-block;
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.butlist li:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+.butlist li:hover a {
+  color: black;
+}
+.butlist li a {
+  text-decoration: none;
+  color: white;
+}
+
+.dropdowntext {
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.selinc {
+  width: 100px;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid black;
+}
+.selinc .incopt {
+  font-size: 15px;
+}
+
+#filter_but {
+  width: 100px;
+  display: inline-block;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-size: 15px;
+  padding: 15px 20px;
+}
+
+.dropdown {
+  margin-top: 50px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.dd {
+  width: 210px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.newshead {
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.feed {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+@media only screen and (max-width: 630px) {
+  .feed {
+    width: 95%;
+  }
+}
+.feed .feedbox {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 400px;
+}
+.feed .feedbox .feedlist {
+  padding: 0;
+}
+@media only screen and (max-width: 630px) {
+  .feed .feedbox {
+    width: 280px;
+  }
+}
+.feed .feedbox li {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  list-style-type: none;
+  padding: 5px;
+}
+@media only screen and (max-width: 630px) {
+  .feed .feedbox li {
+    font-size: 18px;
+  }
+}
+.feed .feedbox li .fieldhead {
+  font-weight: bold;
+}

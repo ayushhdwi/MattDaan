@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: black;
+}
+
+.logo {
+  /* width: 50%; */
+  display: inline-block;
+  padding: 20px;
+  padding-top: 15px;
+}
+
+@media only screen and (min-width: 650px) {
+  .logo {
+    float: left;
+    width: 90px;
+    height: 90px;
+  }
+  .logo .logopic {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 649px) {
+  .logo {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .logo .logopic {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80px;
+    height: 80px;
+    
+  }
+}
+
+/* ______________________________butlist CSS_______________________________ */
+.butlist {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+@media only screen and (min-width: 650px) {
+  .butlist {
+    width: 85%;
+  }
+  .butlist li {
+    float: right;
+  }
+}
+@media only screen and (max-width: 649px) {
+  .butlist {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .butlist .butres {
+    width: 341px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .butlist li {
+    border: 2px solid white;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .butlist .butres {
+    width: 285px;
+  }
+  .butlist li {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.butlist li {
+  margin: 15px;
+  padding: 15px;
+  font-size: 25px;
+  display: inline-block;
+  font-family: 'Fira Sans', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.butlist li:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+.butlist li:hover a {
+  color: black;
+}
+.butlist li a {
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  margin-top: 50px;
+}
+.main .col1 {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+@media only screen and (max-width: 950px) {
+  .main .col1 {
+    width: 100%;
+    display: block;
+  }
+}
+.main .col1 .info {
+  margin-top: 50px;
+  font-family: "Oswald", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  vertical-align: top;
+  width: 60%;
+}
+@media only screen and (max-width: 950px) {
+  .main .col1 .info {
+    text-align: center;
+  }
+}
+.main .col1 .info .infohead {
+  font-size: 30px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 950px) {
+  .main .col1 .info .infohead {
+    font-size: 22px;
+  }
+}
+.main .col1 .info .infotext {
+  font-size: 20px;
+}
+@media only screen and (max-width: 950px) {
+  .main .col1 .info .infotext {
+    font-size: 18px;
+  }
+}
+.main .col1 .info .infotext #gotohome {
+  margin-top: 50px;
+  width: 200px;
+  border: 2px solid black;
+  background: white;
+  color: black;
+  padding: 10px;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.main .col1 .info .infotext #gotohome:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+.main .col2 {
+  width: 49%;
+  display: inline-block;
+}
+@media only screen and (max-width: 950px) {
+  .main .col2 {
+    width: 100%;
+    display: block;
+  }
+}
+
+#map {
+  margin: 0 auto;
+  width: 450px;
+  height: 450px;
+  margin-top: 30px;
+  background-color: grey;
+}
+@media only screen and (max-width: 550px) {
+  #map {
+    width: 250px;
+    height: 250px;
+  }
+}

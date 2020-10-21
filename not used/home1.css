@@ -1,0 +1,102 @@
+body {
+  background-image: url("../img/bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.navbar * {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.logotext a{
+  font-size: 3em;
+  color: antiquewhite;
+  text-decoration: none;
+}
+@media only screen and (min-width: 650px) {
+    .logo {
+      /* float: left; */
+      width: 70px;
+      height: 70px;
+    }
+    .logo .logopic {
+      width: 80px;
+      height: 80px;
+    }
+  }
+@media only screen and (max-width: 649px) {
+  .logo.logopic {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ____________ButList CSS Properties_______________ */
+/* li a {
+    font-size: 4em;
+    display: block;
+    padding: 8px;
+    color: #fffdfd;
+} */
+
+.butlist {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    display: inline-block;
+}
+@media only screen and (min-width: 650px) {
+    .butlist li {
+        float: right;
+    }
+}
+@media only screen and (max-width: 649px) {
+    .butlist {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .butlist .butres {
+        width: 341px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .butlist li {
+        border: 2px solid white;
+        font-weight: bold;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .butlist .butres {
+        width: 285px;
+    }
+    .butlist li {
+        font-size: 20px;
+        padding: 10px;
+        float: right;
+    }
+}
+.butlist li {
+    margin: 15px;
+    padding: 15px;
+    font-size: 25px;
+    display: inline-block;
+    font-family: "Fira Sans", sans-serif;
+    color: white;
+    text-align: center;
+}
+.butlist li:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+.butlist li:hover a {
+    color: black;
+}
+.butlist li a {
+    text-decoration: none;
+    color: white;
+}
