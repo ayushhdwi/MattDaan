@@ -2,7 +2,7 @@
 	$domain = 'localhost';
 	$username = 'root';
 	$password = '';
-	$dbname = 'votesafe';
+	$dbname = 'mattdaan';
 
 	$conn = mysqli_connect($domain,$username,$password,$dbname);
 ?>

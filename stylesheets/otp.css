@@ -1,78 +1,90 @@
-/* line 12, ../sass/otp.scss */
 body {
   margin: 0;
 }
 
-/* line 15, ../sass/otp.scss */
 nav {
   background-color: black;
 }
 
-/* line 18, ../sass/otp.scss */
 .logo {
-  width: 50%;
   display: inline-block;
+  padding: 20px;
+  padding-top: 15px;
 }
-@media only screen and (max-width: 649px) {
-  /* line 18, ../sass/otp.scss */
+
+@media only screen and (min-width: 650px) {
   .logo {
-    width: 100%;
+    float: left;
+    width: 90px;
+    height: 90px;
+  }
+  .logo .logopic {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  .logo {
+    /* width: 100%; */
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
-}
-@media only screen and (min-width: 650px) {
-  /* line 18, ../sass/otp.scss */
-  .logo {
-    float: left;
-  }
-}
-/* line 28, ../sass/otp.scss */
-.logo .logopic {
-  width: 250px;
-}
-@media only screen and (max-width: 649px) {
-  /* line 28, ../sass/otp.scss */
   .logo .logopic {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    width: 80px;
+    height: 80px;
   }
 }
 
-/* line 35, ../sass/otp.scss */
+/* ______________________________butlist CSS_______________________________ */
+
 .butlist {
   padding: 0;
   margin: 0;
   width: 50%;
   display: inline-block;
 }
+@media only screen and (min-width: 650px) {
+  .butlist {
+    width: 85%;
+  }
+  .butlist li {
+    float: right;
+  }
+}
 @media only screen and (max-width: 649px) {
-  /* line 35, ../sass/otp.scss */
   .butlist {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
-}
-@media only screen and (max-width: 649px) {
-  /* line 44, ../sass/otp.scss */
   .butlist .butres {
     width: 341px;
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
+  .butlist li {
+    border: 2px solid white;
+    font-weight: bold;
+  }
 }
+
 @media only screen and (max-width: 500px) {
-  /* line 44, ../sass/otp.scss */
   .butlist .butres {
     width: 285px;
   }
+  .butlist li {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
 }
-/* line 53, ../sass/otp.scss */
 .butlist li {
   margin: 15px;
   padding: 15px;
@@ -82,42 +94,21 @@ nav {
   color: white;
   text-align: center;
 }
-@media only screen and (min-width: 650px) {
-  /* line 53, ../sass/otp.scss */
-  .butlist li {
-    float: right;
-  }
-}
-@media only screen and (max-width: 649px) {
-  /* line 53, ../sass/otp.scss */
-  .butlist li {
-    border: 2px solid white;
-    font-weight: bold;
-  }
-}
-@media only screen and (max-width: 500px) {
-  /* line 53, ../sass/otp.scss */
-  .butlist li {
-    font-size: 20px;
-    padding: 10px;
-  }
-}
-/* line 75, ../sass/otp.scss */
+
+
+
 .butlist li:hover {
   background-color: white;
   transition: 0.5s;
 }
-/* line 78, ../sass/otp.scss */
 .butlist li:hover a {
   color: black;
 }
-/* line 83, ../sass/otp.scss */
 .butlist li a {
   text-decoration: none;
   color: white;
 }
 
-/* line 91, ../sass/otp.scss */
 .modal {
   display: none;
   position: fixed;
@@ -132,7 +123,6 @@ nav {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* line 104, ../sass/otp.scss */
 .modal-body {
   background-color: #fefefe;
   margin: auto;
@@ -141,7 +131,6 @@ nav {
   width: 60%;
 }
 
-/* line 111, ../sass/otp.scss */
 .close {
   color: #aaaaaa;
   float: right;
@@ -149,7 +138,6 @@ nav {
   font-weight: bold;
 }
 
-/* line 117, ../sass/otp.scss */
 .close:hover,
 .close:focus {
   color: #000;
@@ -157,11 +145,9 @@ nav {
   cursor: pointer;
 }
 
-/* line 124, ../sass/otp.scss */
 .container {
   margin-top: 30px;
 }
-/* line 126, ../sass/otp.scss */
 .container #check_otp {
   margin-top: 100px;
   width: 300px;
@@ -169,19 +155,16 @@ nav {
   margin-right: auto;
   display: block;
 }
-/* line 130, ../sass/otp.scss */
 .container #check_otp fieldset {
   border: none;
   width: 140px;
   display: inline-block;
 }
-/* line 134, ../sass/otp.scss */
 .container #check_otp fieldset #text_field {
   width: 140px;
   border: 1px solid black;
   padding: 10px;
 }
-/* line 140, ../sass/otp.scss */
 .container #check_otp #verify_but {
   width: 100px;
   display: inline-block;

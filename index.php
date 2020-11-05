@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="stylesheets/home.css"/>
@@ -12,7 +12,7 @@
 <body>
 	<nav class="navbar">
 		<div class="logo">
-			<a href="index.php"><img class="logopic" src="img/logo.png"></a>
+			<a href="index.php"><img class="logopic" alt="logo" src="img/logo.png"></a>
 		</div>
 		<ul class="butlist">
 			<span class="butres">
