@@ -14,7 +14,7 @@
 <body >
 	<nav class="navbar">
 		<div class="logo">
-			<a href="index.php"><img class="logopic" alt="logo" src="img/logo.png"></a>
+			<a href="index.php"><img class="logopic" alt="MattDaan Logo" src="img/logo.png"></a>
 		</div>
 		<ul class="butlist">
 			<span class="butres">

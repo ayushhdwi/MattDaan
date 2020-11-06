@@ -2,7 +2,7 @@
 include_once 'includes/dbh.inc.php';
 
 $year = '2020';
-$t1n = "SELECT count(*) as c from complains where year(date) ='".$year."' and crime_type = 'impersonation';";
+$t1n = "SELECT count(*) as c from complains where year(date) ='".$year."' and crime_type = 'impersonat';";
 $t2n = "SELECT count(*) as c from complains where year(date) ='".$year."' and crime_type = 'booth-capturing';";
 $t3n = "SELECT count(*) as c from complains where year(date) ='".$year."' and crime_type = 'murder';";
 $t4n = "SELECT count(*) as c from complains where year(date) ='".$year."' and crime_type = 'blackmail';";
@@ -115,37 +115,34 @@ echo '
 	</script>
 </head>
 <body>
-	<nav class="navabar">
+	<nav class="navbar">
 		<div class="logo">
-			<a href="index.php"><img class="logopic" src="img/logo.png"></a>
+			<a href="index.php"><img class="logopic" alt="MattDaan Logo" src="img/logo.png"></a>
 		</div>
 		<ul class="butlist">
 			<span class="butres">
-				<li class="hvr-glow">
-					<a href="">ABOUT</a>
-				</li>
-				<li class="hvr-glow">
-					<a href="">NEWSFEED</a>
-				</li>
+				<li><a href="about.php">ABOUT</a></li>
+				<li><a href="news.php">NEWSFEED</a></li>
+				<li style="float:left;"><a href="news.php">MATT&nbsp;DAAN</a></li>
 			</span>
 		</ul>
 	</nav>
 
 <div class="main">
-	<span class="selectopts">
-		<center>
-			<span class="dropdown">
-				<select class="selyr">
-					<option class="yropt" value="2020">2020</option>
-					<option class="yropt" value="2019">2019</option>
-					<option class="yropt" value="2018">2018</option>
-				</select>
-			</span>
-		</center>
-		<span class="getbut">
-		<button id="generate_chart" onclick="genChart();return;">Get charts</button>
-		</span>
-	</span>
+	<div class="selectopts">
+		
+		<div class="dropdown">
+			<select class="selyr">
+				<option class="yropt" value="2020">2020</option>
+				<option class="yropt" value="2019">2019</option>
+				<option class="yropt" value="2018">2018</option>
+			</select>
+		</div>
+		
+		<div class="getbut">
+			<button id="generate_chart" onclick="genChart();return;">Get charts</button>
+		</div>
+	</div>
 
 	<div id="chartContainer" style="height: 400px; width: 90%;"></div>
 	<div id="barchartContainer" style="height: 400px; width: 90%;"></div>

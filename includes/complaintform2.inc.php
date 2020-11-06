@@ -70,7 +70,7 @@
 	}
 	if($ind == 0){
 		if($freq[0]!=0) {
-			$type = 'impersonation';
+			$type = 'impersonat';
 		}
 		else {
 			$type = 'other';

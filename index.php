@@ -29,17 +29,20 @@
 	</div>
 
 	<div class="pagebuts">
+
 		<div class="pagebut">
 			<span class="pagebuttext">
 				<a href="submitreport2.php">Submit Report</a>
 			</span>
 		</div>
+
 		<div class="pagebut">
 			<span class="pagebuttext">
 				<a href="map.php">View Map</a>
 			</span>
 			<br>
 		</div>
+		
 		<div class="pagebut">
 			<span class="pagebuttext">
 				<a href="graphlatest.php">View Statistics</a>

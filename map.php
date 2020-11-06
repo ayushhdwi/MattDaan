@@ -11,7 +11,7 @@
 <body>
 <nav class="navbar">
 		<div class="logo">
-			<a href="index.php"><img class="logopic" src="img/logo.png"></a>
+			<a href="index.php"><img class="logopic" alt="MattDaan Logo" src="img/logo.png"></a>
 		</div>
 		<ul class="butlist">
 			<span class="butres">
@@ -20,7 +20,7 @@
 				<li style="float:left;"><a href="news.php">MATT&nbsp;DAAN</a></li>
 			</span>
 		</ul>
-  </nav>
+	</nav>
   
 <div class="main">
   <div class="col1">
@@ -82,7 +82,7 @@
         {coords:{lat:13,lng:79},type:'murder',priority:6},
         {coords:{lat:14,lng:79},type:'booth-capturing',priority:2},
         {coords:{lat:28,lng:77},type:'threatening',priority:4},
-        {coords:{lat:19,lng:72},type:'impersonation',priority:2},
+        {coords:{lat:19,lng:72},type:'impersonat',priority:2},
         {coords:{lat:12,lng:77},type:'murder',priority:4},
         {coords:{lat:17,lng:78},type:'bribery',priority:2}
       ];

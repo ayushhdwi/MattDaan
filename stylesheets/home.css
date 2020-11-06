@@ -129,11 +129,28 @@ body {
 /* ____________________PageButs CSS___________________ */
 .pagebuts {
   margin-top: 150px;
+  position: relative;
 }
 .pagebuts .pagebut {
   width: 33%;
+  position: absolute;
+  top: 10px;
+  /* height: 100%; */
   display: inline-block;
 }
+
+.pagebuts .pagebut:nth-child(1) {
+  left:5%;
+}
+.pagebuts .pagebut:nth-child(2) {
+  left:33%;
+}
+
+.pagebuts .pagebut:nth-child(3) {
+  right:5%;
+}
+
+
 @media only screen and (max-width: 1000px) {
   .pagebuts .pagebut {
     width: 100%;

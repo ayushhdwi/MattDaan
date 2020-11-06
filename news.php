@@ -15,21 +15,18 @@
 </head>
 
 <body>
-  <nav class="navabar">
-    <div class="logo">
-      <a href="index.php"><img class="logopic" alt="logo" src="img/logo.png"></a>
-    </div>
-    <ul class="butlist">
-      <span class="butres">
-        <li class="hvr-glow">
-          <a href="about.html">ABOUT</a>
-        </li>
-        <li class="hvr-glow">
-          <a href="news.php">NEWSFEED</a>
-        </li>
-      </span>
-    </ul>
-  </nav>
+  <nav class="navbar">
+		<div class="logo">
+			<a href="index.php"><img class="logopic" alt="MattDaan Logo" src="img/logo.png"></a>
+		</div>
+		<ul class="butlist">
+			<span class="butres">
+				<li><a href="about.php">ABOUT</a></li>
+				<li><a href="news.php">NEWSFEED</a></li>
+				<li style="float:left;"><a href="news.php">MATT&nbsp;DAAN</a></li>
+			</span>
+		</ul>
+	</nav>
   
   <p class="newshead">NewsFeed</p>
   <span class="dropdown">
@@ -37,7 +34,7 @@
     <span class="dd">
       <form method="POST" action="news.php">
         <select class="selinc" name="filter">
-          <option class="incopt" value="impersonation">Impersonation</option>
+          <option class="incopt" value="impersonat">Impersonation</option>
           <option class="incopt" value="booth-capturing">Booth Capturing</option>
           <option class="incopt" value="murder">Murder</option>
           <option class="incopt" value="blackmail">Threatening</option>
@@ -58,7 +55,6 @@
       while($row= mysqli_fetch_row($run_query)) {
         $date=$row[0];
         $type=$row[1];
-        // $location=$row[1];
         echo '
           <div class="feedbox">
             <ul class="feedlist">
